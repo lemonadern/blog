@@ -1,6 +1,6 @@
 import Container from '@/components/container'
 import Stories from '@/components/stories'
-import Intro from '@/components/intro'
+import Header from '@/components/header'
 import Layout from '@/components/layout'
 import { getAllPosts } from '@/lib/api'
 import Head from 'next/head'
@@ -18,7 +18,7 @@ const Index = ({ allPosts }: Props) => {
           <title>lemonadern's blog</title>
         </Head>
         <Container>
-          <Intro />
+          <Header/>
           {allPosts.length > 0 && <Stories posts={allPosts} />}
         </Container>
       </Layout>
