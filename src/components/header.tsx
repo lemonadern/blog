@@ -1,4 +1,6 @@
 import { SITE_NAME } from '@/lib/constants'
+import { TWITTER_URL, GITHUB_URL } from '@/lib/constants'
+import { FaTwitter ,FaGithub } from "react-icons/fa"
 import Link from 'next/link'
 
 const Header = () => {
@@ -10,7 +12,10 @@ const Header = () => {
         </Link>
         .
       </h2>
-      <button>push me</button>
+      <div className="flex flex-row items-center gap-8 text-xl">
+        <a href={TWITTER_URL}><FaTwitter /></a>
+        <a href={GITHUB_URL}><FaGithub /></a>
+      </div>
     </div>
   )
 }

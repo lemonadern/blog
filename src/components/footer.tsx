@@ -1,5 +1,5 @@
 import Container from './container'
-import { TWITTER_URL, GITHUB_URL, ZENN_URL,WANTEDLY_URL } from '@/lib/constants'
+import { TWITTER_URL, GITHUB_URL, ZENN_URL } from '@/lib/constants'
 import { FaTwitter ,FaGithub } from "react-icons/fa"
 import { SiZenn } from 'react-icons/si'
 
