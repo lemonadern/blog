@@ -5,6 +5,7 @@ import Layout from '@/components/layout'
 import { getAllPosts } from '@/lib/api'
 import Head from 'next/head'
 import Post from '@/types/post'
+import { SITE_NAME } from '@/lib/constants'
 
 type Props = {
   allPosts: Post[]
@@ -15,7 +16,7 @@ const Index = ({ allPosts }: Props) => {
     <>
       <Layout>
         <Head>
-          <title>lemonadern's blog</title>
+          <title>{SITE_NAME}</title>
         </Head>
         <Container>
           <Header/>

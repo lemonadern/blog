@@ -10,14 +10,14 @@ import PostTitle from '@/components/post-title'
 import Head from 'next/head'
 import markdownToHtml from '@/lib/markdownToHtml'
 import PostType from '@/types/post'
+import { SITE_NAME } from '@/lib/constants'
 
 type Props = {
   post: PostType
-  morePosts: PostType[]
   preview?: boolean
 }
 
-const Post = ({ post, morePosts }: Props) => {
+const Post = ({ post }: Props) => {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -33,7 +33,7 @@ const Post = ({ post, morePosts }: Props) => {
             <article className="mb-32">
               <Head>
                 <title>
-                  {post.title} | lemonadern's blog
+                  {post.title} | {SITE_NAME}
                 </title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>

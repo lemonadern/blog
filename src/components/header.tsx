@@ -1,6 +1,6 @@
 import { SITE_NAME } from '@/lib/constants'
 import { TWITTER_URL, GITHUB_URL } from '@/lib/constants'
-import { FaTwitter ,FaGithub } from "react-icons/fa"
+import { FaTwitter, FaGithub } from 'react-icons/fa'
 import Link from 'next/link'
 
 const Header = () => {
