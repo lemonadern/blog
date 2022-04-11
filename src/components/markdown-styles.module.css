@@ -16,4 +16,6 @@
   @apply prose-code:before:content-none prose-code:after:content-none;
   @apply prose-pre:bg-[#0d1117] prose-pre:p-2 prose-pre:shadow-lg;
 
+  @apply prose-li:marker:text-gray-600;
+  @apply prose-blockquote:border-l-gray-400;
 }
