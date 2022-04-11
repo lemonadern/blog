@@ -1,5 +1,5 @@
 .markdown {
-  @apply prose;
+  @apply prose prose-lg;
 
   /* heading */
   @apply prose-headings:font-bold prose-headings:leading-relaxed prose-headings:mb-2;
