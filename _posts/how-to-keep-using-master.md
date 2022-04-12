@@ -5,7 +5,7 @@ ogImage:
   url: '/assets/og_logo.png'
 ---
 
-Git / GItHub におけるデフォルトブランチの設定は、 `master` から `main` へと変化している。
+Git / GitHub におけるデフォルトブランチの設定は、 `master` から `main` へと変化している。
 
 これは「奴隷制を想起する言葉（master - slave など）を使わないようにしよう」という啓蒙活動の影響を受けた流れだそう。
 
